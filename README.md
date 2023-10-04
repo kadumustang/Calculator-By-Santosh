@@ -18,3 +18,22 @@ Developing a calculator project can be an excellent way to learn programming, im
 **Programming Languages and Tools**
 The choice of programming language and development tools used for this project are HTML CSS, JavaScript (for web-based calculators),
 
+**Here's a breakdown of how this code works**
+1. It selects an HTML element with the id "inputBox" and stores it in the variable input. This element is likely an input field where the calculator's input and output will be displayed.
+
+2. It selects all the buttons on the page and stores them in the buttons variable using document.querySelectorAll('button').
+
+3. It initializes two variables: string, which will store the current input string, and arr, which is an array converted from the NodeList of buttons obtained in step 2.
+
+4. It iterates through each button in the arr array and adds a click event listener to each button.
+
+5. Inside the click event listener for each button, it checks the button's inner HTML to determine its action:
+     1.If the button's inner HTML is '=' (i.e., the equal sign), it evaluates the current string as a JavaScript expression using eval() and updates the string variable and 
+       the input field (input.value) with the result.
+     2. If the button's inner HTML is 'AC' (clear), it clears the string variable and sets the input field's value to an empty string.
+     3. If the button's inner HTML is 'DEL' (delete), it removes the last character from the string variable and updates the input field.
+     4. For all other buttons, it appends the button's inner HTML to the string variable and updates the input field.
+
+6. This code effectively creates a simple calculator functionality where users can input arithmetic expressions using the buttons and see the result in the input field when they press the '=' button.
+
+However, please note eval()
