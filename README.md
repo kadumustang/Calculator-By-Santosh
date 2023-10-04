@@ -30,8 +30,11 @@ The choice of programming language and development tools used for this project a
 5. Inside the click event listener for each button, it checks the button's inner HTML to determine its action:
      1.If the button's inner HTML is '=' (i.e., the equal sign), it evaluates the current string as a JavaScript expression using eval() and updates the string variable and 
        the input field (input.value) with the result.
+   
      2. If the button's inner HTML is 'AC' (clear), it clears the string variable and sets the input field's value to an empty string.
+        
      3. If the button's inner HTML is 'DEL' (delete), it removes the last character from the string variable and updates the input field.
+     
      4. For all other buttons, it appends the button's inner HTML to the string variable and updates the input field.
 
-6. This code effectively creates a simple calculator functionality where users can input arithmetic expressions using the buttons and see the result in the input field when they press the '=' button.
+7. This code effectively creates a simple calculator functionality where users can input arithmetic expressions using the buttons and see the result in the input field when they press the '=' button.
