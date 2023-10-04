@@ -28,6 +28,7 @@ The choice of programming language and development tools used for this project a
 4. It iterates through each button in the arr array and adds a click event listener to each button.
 
 5. Inside the click event listener for each button, it checks the button's inner HTML to determine its action:
+   
      1.If the button's inner HTML is '=' (i.e., the equal sign), it evaluates the current string as a JavaScript expression using eval() and updates the string variable and 
        the input field (input.value) with the result.
    
