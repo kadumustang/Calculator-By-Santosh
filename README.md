@@ -35,5 +35,3 @@ The choice of programming language and development tools used for this project a
      4. For all other buttons, it appends the button's inner HTML to the string variable and updates the input field.
 
 6. This code effectively creates a simple calculator functionality where users can input arithmetic expressions using the buttons and see the result in the input field when they press the '=' button.
-
-However, please note eval()
